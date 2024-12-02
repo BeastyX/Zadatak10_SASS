@@ -61,7 +61,7 @@
 
             background-image:
             linear-gradient(to left, transparent, rgba(7, 7, 7, 0.8)),
-            url('/images/food1.png');
+            url('../images/food1.png');
 
             .section2-content-discount
             {
@@ -84,14 +84,14 @@
         {
             background-image:
             linear-gradient(to left, transparent, rgba(7, 7, 7, 0.8)),
-            url('/images/food2.png');
+            url('../images/food2.png');
         }
 
         .section2-content:nth-child(3)
         {
             background-image:
             linear-gradient(to left, transparent, rgba(7, 7, 7, 0.8)),
-            url('/images/food3.png');
+            url('../images/food3.png');
         }
 
         h1
