@@ -1,0 +1,91 @@
+.section6
+{
+    // @include testborder;
+    @include flexCenter(column);
+
+    margin-top: 50px;
+
+    .section6-container
+    {
+        // @include testborder;
+        @include flexCenter(row, space-between);
+
+        width: 90%;
+
+        .section6-content
+        {
+
+            position: relative;
+
+            @include flexCenter(column, end);
+            align-items: start;
+
+            padding: 30px;
+            border-radius: 16px;
+
+            width: 46%;
+            height: 500px;
+
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+
+            background-image:
+            linear-gradient(to left, transparent, rgba(3, 8, 31, 0.19), rgba(3, 8, 31, 0.89)),
+            url('/images/boss1.png');
+
+            .section6-content-msg
+            {
+                position: absolute;
+
+                left: 64px;
+                top: 0;
+
+                padding: 20px 64px;
+                border-radius: 0px 0px 12px 12px;
+                background-color: $third-color;
+
+                color: $primary-txt-color;
+                font-weight: weight(bolder);
+                font-size: 18px;
+            }
+
+            h1
+            {
+                color: $secondary-txt-color;
+                font-size: 18px;
+                font-weight: weight(medium);
+            }
+            
+            h2
+            {
+                color: $third-color;
+                font-size: 44px;
+                font-weight: weight(bolder);
+            }
+            
+            p
+            {
+
+                color: $third-color;
+                font-size: 18px;
+                font-weight: weight(medium);
+                background-color: $secondary-txt-color;
+
+                text-align: center;
+
+                margin-top: 24px;
+                padding: 12px 0px;
+                width: 200px;
+                border-radius: 32px;
+            }
+        }
+
+        .section6-content:nth-child(2)
+        {
+            background-image:
+            linear-gradient(to left, transparent, rgba(7, 7, 7, 0.6)),
+            url('/images/boss2.png');
+        }
+    }
+}

@@ -1,0 +1,216 @@
+.section1
+{
+    // @include testborder;
+    @include flexCenter();
+
+    margin-top: 50px;
+
+    .section1-container
+    {
+        // @include testborder;
+        @include flexCenter(row, space-between);
+
+        background-color: $primary-txt-color;
+        
+        border-radius: 12px;
+        width: 90%;
+        height: 600px;
+        
+        .section1-container-left
+        {
+            // @include testborder;
+
+            width: 25%;
+            color: $third-color;
+            padding: 100px 50px;
+
+            h1
+            {
+                font-size: 16px;
+                font-weight: weight(regular);
+            }
+            h2
+            {
+                font-size: 54px;
+                font-weight: weight(bold);
+                width: 550px;
+                line-height: 68px;
+
+                span
+                {
+                    color: $secondary-txt-color;
+                }
+            }
+            h3
+            {
+                margin: 50px 0px 8px 16px;
+
+                font-size: 14px;
+                font-weight: weight(regular);
+            }
+
+            .search-bar-container
+            {
+                @include flexCenter(row, space-between);
+                background-color: $third-color;
+                
+                width: 450px;
+                border-radius: 32px;
+                padding-left: 16px;
+                
+                p
+                {
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                
+                h4
+                {
+                    @include flexCenter();
+                    background-color: $secondary-txt-color;
+
+                    padding: 16px;
+                    border-radius: 32px;
+                    width: 160px;
+
+                }
+            }
+        }
+
+        .section1-container-right
+        {
+            // @include testborder();
+            @include flexCenter(row);
+
+            position: relative;
+            width: 75%;
+            height: 600px;
+
+            img
+            {
+                position: absolute;
+            }
+            
+            img:nth-child(1)
+            {
+                width: 800px;
+                bottom: 0px;
+                right: 0px;
+                right: 570px;
+            }
+            
+            img:nth-child(2)
+            {
+                width: 470px;
+                right: 550px;
+                bottom: 0px;
+
+                z-index: 3;
+            }
+            
+            .orange-shape
+            {
+                background-color: $secondary-txt-color;
+                position: absolute;
+                
+                z-index: 2;
+                border-radius: 280px 0px 0px 12px;
+                
+                width: 800px;
+                height: 570px;
+                
+                bottom: 0px;
+                right: 0px;
+
+                p
+                {
+                    position: absolute;
+                    font-size: 80px;
+                    font-weight: weight(bold);
+
+                    
+                    // number outline
+                    color: $third-color;
+                    -webkit-text-fill-color: $secondary-txt-color;
+                    -webkit-text-stroke: 1px $third-color;
+                }
+                
+                p:nth-child(1)
+                {
+                    top: -5px;
+                    right: 190px;
+                }
+
+                p:nth-child(2)
+                {
+                    top: 170px;
+                    right: 90px;
+                }
+                
+                p:nth-child(3)
+                {
+                    top: 350px;
+                    right: 140px;
+                }
+
+                .notification-container
+                {
+                    position: absolute;
+
+                    @include flexCenter(column);
+                    align-items: start;
+                    text-align: start;
+
+                    padding-left: 36px;
+                    padding-top: 16px;
+
+                    width: 390px;
+                    height: 120px;
+
+                    top: 60px;
+                    right: 90px;
+
+
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    background-image: url('/images/NotificationBubble.png');
+
+                    h1
+                    {
+                        position: relative;
+                        font-size: 12px;
+                        font-weight: weight(bold); 
+                    }
+                    
+                    h2
+                    {
+                        position: relative;
+                        font-size: 12px;
+                        font-weight: weight(regular); 
+                        
+                    }
+
+                    &:nth-of-type(1) 
+                    {
+                        top: 60px;
+                        right: 150px;
+                    }
+                  
+                    &:nth-of-type(2) 
+                    {
+                        top: 240px;
+                        right: 50px;
+                    }
+                
+                    &:nth-of-type(3) 
+                    {
+                        top: 420px;
+                        right: 100px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

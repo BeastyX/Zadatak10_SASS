@@ -1,0 +1,24 @@
+1. Instaliram Live Sass Compiler
+
+2. Odem na Settings / Live Sass Compiler
+
+3. Nadjem ovo:
+    Live Sass Compile › Settings: Formats
+    Set your exported CSS Styles, Formats & save location.
+
+4. dodam format, extension name i save path:
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/css"
+    }
+
+5. Napravim index.html
+
+6. Napravim Scss folder i main.scss u njemu
+
+7. dok sam u main.scss odem dole na opciju "Watch Sass"
+
+8. Scss napravi css
+
+9. dok dole pise "Watching.." Svaki put kad uradim save u Scss-u i Css se updatuje.

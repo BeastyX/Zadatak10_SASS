@@ -1,0 +1,59 @@
+.section8
+{
+    @include flexCenter();
+    margin-top: 50px;
+
+    .section8-container
+    {
+        @include flexCenter();
+        // @include testborder();
+
+        background-color: $secondary-txt-color;
+
+        width: 90%;
+        margin-bottom: 50px;
+        padding: 12px 0px;
+        border-radius: 16px;
+
+        .content
+        {
+            @include flexCenter(column);
+            // @include testborder();
+
+            span
+            {
+                &.num
+                {
+                    position: relative;
+                    color: $third-color;
+
+                    width: 250px;
+                    text-align: center;
+                    
+                    font-size: 64px;
+                    font-weight: 300;
+                    bottom: -8px;
+                }
+                
+                &.text
+                {
+                    text-align: center;
+                    position: relative;
+                    color: $third-color;
+                    font-size: 24px;
+                    font-weight: weight(bolder);
+                    bottom: 8px;
+                }
+            }
+        }
+
+        hr
+        {
+            margin-left: 48px;
+            margin-right: 48px;
+            height: 100px;
+            border: 1px solid $third-color;
+        }
+    }
+    
+}

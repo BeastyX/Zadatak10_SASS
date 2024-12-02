@@ -1,0 +1,161 @@
+footer
+{
+    // @include testborder();
+    @include flexCenter(column);
+    
+    
+    .footer-container-upper
+    {
+        // @include testborder();
+        padding-top: 64px;
+        padding-bottom: 64px;
+        @include flexCenter(column);
+        width: 100%;
+        font-weight: weight(medium);
+        background-color: rgba(217, 217, 217, 0.3);
+        
+        .footer-container-upper-content
+        {
+            // @include testborder();
+            @include flexCenter(row, space-between);
+            width: 90%;
+
+            .footer-upper-left
+            {
+                // @include testborder();
+                .footer-logo
+                {
+                    width: 270px;
+                }
+
+                .footer-upper-left-apps
+                {
+                    margin-top: 24px;
+                    img
+                    {
+                        width: 200px;
+                    }
+                }
+                
+                p
+                {
+                    margin-top: 16px;
+                    width: 350px;
+                }
+            }
+
+            .footer-upper-center
+            {
+                // @include testborder();
+                margin-left: 200px;
+
+                h1
+                {
+                    font-weight: weight(bolder);
+                    font-size: 18px;
+                }
+
+                .footer-search
+                {
+                    @include flexCenter(row, space-between);
+
+                    margin-top: 24px;
+                    width: 500px;
+                    background-color: rgba(217, 217, 217, 1); 
+                    border-radius: 32px;
+
+                    p
+                    {
+                        padding-left: 24px;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    h2
+                    {
+                        background-color: $secondary-txt-color;
+                        color: $third-color;
+
+                        font-weight: weight(medium);
+                        font-size: 18px;
+                        padding: 12px 32px;
+                        border-radius: 24px;
+                    }
+                }
+
+                h3
+                {
+                    margin-top: 12px;
+                    padding-left: 24px;
+
+                    font-weight: weight(regular);
+                    font-size: 14px;
+
+                    span
+                    {
+                        text-decoration: underline;
+                    }
+                }
+
+                .media
+                {
+                    @include flexCenter(row, start);
+
+                    column-gap: 8px;
+                    margin-top: 16px;
+                    padding-left: 16px
+                }
+            }
+            
+            .footer-upper-right
+            {
+                // @include testborder();
+                @include flexCenter(row, start);
+                column-gap: 64px;
+
+                ul
+                {
+                    list-style-type: none;
+                    @include flexCenter(column, start);
+                    align-items: start;
+                    row-gap: 16px;
+
+                    li
+                    {
+                        text-decoration: underline;
+                    }
+
+                    li:first-child
+                    {
+                        text-decoration: none;
+                        font-weight: weight(bolder);
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer-container-lower
+    {
+        width: 100%;
+        @include flexCenter(row);
+
+        background-color: $primary-txt-color;
+        color: $third-color;
+        
+        .footer-container-lower-content
+        {
+            width: 90%;
+            @include flexCenter(row, space-between);
+
+            padding: 24px;
+
+            ul
+            {
+                @include flexCenter(row);
+                column-gap: 42px;
+                list-style-type: none;
+            }
+        }
+    }
+}

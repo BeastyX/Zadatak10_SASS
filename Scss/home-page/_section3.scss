@@ -1,0 +1,65 @@
+.section3
+{
+    @include flexCenter(column);
+
+    margin-top: 50px;
+
+    .section3-container
+    {
+        // @include testborder;
+        @include flexCenter(column);
+        align-items: start;
+
+        width: 90%;
+        margin-bottom: 50px;
+        
+        h1
+        {
+            font-size: 32px;
+            font-weight: weight(bolder);
+        }
+        
+        .section3-container-content
+        {
+            @include flexCenter(row, space-between);
+            width: 100%;
+
+            margin-top: 50px;
+            border-radius: 12px;
+            
+            .section3-content
+            {
+                img
+                {
+                    width: 260px;
+                }
+                
+                .section3-text
+                {
+                    background-color: rgba(245, 245, 245, 1);
+                    border: 2px solid rgba(0, 0, 0, 0.1);
+                    border-top: 0px;
+                    border-radius: 0px 0px 12px 12px;
+                    padding: 12px;
+
+                    margin-top: -8px;
+
+
+                    h1
+                    {
+                        font-weight: weight(bolder);
+                        font-size: 18px;
+                    }
+    
+                    h2
+                    {
+                        font-weight: weight(regular);
+                        font-size: 14px;
+                        color: $secondary-txt-color;
+                    }
+
+                }
+            }
+        }
+    }
+}

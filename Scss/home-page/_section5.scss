@@ -1,0 +1,112 @@
+.section5
+{
+    // @include testborder;
+    @include flexCenter(column);
+
+    margin-top: 50px;
+
+    .section5-container
+    {
+        position: relative;
+
+        // @include testborder;
+        @include flexCenter(row, end);
+        width: 90%;
+        margin-bottom: 50px;
+
+        height: 600px;
+
+        background: linear-gradient(rgba(238, 238, 238, 1), rgba(224, 225, 220, 1));
+
+        .friends
+        {
+            position: absolute;
+            width: 800px;
+
+            &:nth-of-type(1) 
+            {
+                bottom: 0;
+                left: 15px;
+                z-index: 1;
+            }
+            &:nth-of-type(2) 
+            {
+                bottom: 15px;
+                left: 0px;
+                opacity: 20%;
+            }
+        }
+
+        .section5-text
+        {
+            // @include testborder;
+            width: 950px;
+            
+            .section5-text-logo
+            {
+                position: relative;
+                @include flexCenter(row, start);
+                img
+                {
+                    width: 270px;
+                    position: relative;
+                    bottom: 8px;
+                }
+    
+                h1
+                {
+                    margin-left: 10px;
+                    font-size: 68px;
+                    font-weight: weight(bolder);
+                }
+            }
+
+            .section5-text-blacked
+            {
+                background-color: $primary-txt-color;
+                color: $third-color;
+                position: relative;
+
+                @include flexCenter(row, end);
+                align-items: end;
+
+                left: -130px;
+                border-radius: 64px;
+                padding-right: 40px;
+                width: 800px;
+
+                h2
+                {
+                    font-weight: weight(medium);
+                    font-size: 54px;
+                }
+
+                span
+                {
+                    color: $secondary-txt-color;
+                    text-decoration: underline;
+                }
+            }
+
+            h3
+            {
+                margin-top: 24px;
+                margin-left: 100px;
+                font-weight: weight(regular);
+                font-size: 24px;
+            }
+            
+            .section5-text-apps
+            {
+                margin-left: 130px;
+                margin-top: 24px;
+
+                img
+                {
+                    position: relative;
+                }
+            }
+        }
+        
+    }
+}
