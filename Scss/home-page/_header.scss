@@ -12,6 +12,11 @@ a
     color: black;
 }
 
+body
+{
+    overflow-x: hidden;
+}
+
 header
 {
     @include flexCenter(column);
@@ -31,6 +36,8 @@ header
             border-radius: 0px 0px 12px 12px;
             background-color: rgba(250, 250, 250, 1);
             padding-left: 32px;
+
+            @include fade-up(-120px, 1);
             
             .header-container-upper-left
             {
@@ -93,6 +100,8 @@ header
 
             margin-top: 50px;
             font-weight: weight(medium);
+
+            @include fade-down(60px, 0.9);
 
             img
             {

@@ -3,6 +3,8 @@
     @include flexCenter();
     margin-top: 50px;
 
+    @include scroll();
+
     .section8-container
     {
         @include flexCenter();

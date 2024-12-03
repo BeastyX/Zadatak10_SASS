@@ -17,6 +17,9 @@
         padding: 164px;
         .setction7-upper-txt
         {
+            @include scroll();
+
+
             // @include testborder;
             width: 100%;
             
@@ -54,6 +57,8 @@
 
         .setciont7-main-container
         {
+             @include scroll();
+
             // @include testborder;
             @include flexCenter(row, space-between);
             background-color: $primary-txt-color;

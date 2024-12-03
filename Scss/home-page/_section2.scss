@@ -5,12 +5,15 @@
 
     margin-top: 50px;
 
+    @include scroll();
+    
     .section2-container-upper
     {
         // @include testborder;
         @include flexCenter(row, space-between);
         width: 90%;
         margin-bottom: 50px;
+
 
         h1
         {

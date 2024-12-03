@@ -4,6 +4,8 @@
 
     margin-top: 50px;
 
+    @include scroll();
+
     .section4-container
     {
         // @include testborder;

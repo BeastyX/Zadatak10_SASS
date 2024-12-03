@@ -5,6 +5,8 @@
 
     margin-top: 50px;
 
+    @include scroll();
+
     .section5-container
     {
         position: relative;
