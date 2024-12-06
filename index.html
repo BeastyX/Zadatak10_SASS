@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sass</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -26,16 +27,40 @@
                     <p>GBP 79.89</p>
                     <img src="images/Forward Button.png" alt="Forward button">
                 </div>
+
+            </div>
+            
+            <div class="header-container-mobile">
+                <div class="header-container-mobile-left">
+                    <img src="images/Ellipse9.png" alt="pfp">
+                    <p>Aycan</p>
+                </div>
+                <div class="header-container-mobile-right">
+                    <img src="images/Shopping Basket.png" alt="basket">
+                    <p>GBP 79.89</p>
+                </div>
+            </div>
+
+            <div class="header-container-mobile-location">
+                <img src="images/Location.png" alt="locaiton icon">
+                <p>Regent Street, A4, A4201, London</p>
+                <a href="#"><span>Change Location</span></a>
             </div>
 
             <div class="header-container-lower">
                 <img src="images/LOGO 1.png" alt="Oder logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Browse Menu</a></li>
-                    <li><a href="#">Special Offers</a></li>
-                    <li><a href="#">Restaurants</a></li>
-                    <li><a href="#">Track Order</a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Browse Menu</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Login/Signup</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
                 </ul>
 
                 <a href="#"><div class="login">
@@ -57,6 +82,7 @@
                 <div class="search-bar-container">
                     <p>e.g. EC4R 3TE</p>
                     <h4>Search</h4>
+                    <img src="images/next-page.png" alt="next btn">
                 </div>
             </div>
 
@@ -91,6 +117,7 @@
 
         <div class="section2-container-upper">
             <h1>Up to -40% 🎊 Order.uk exclusive deals</h1>
+            <h1>Up to -40% Discount Offers 🎊</h1>
 
             <ul>
                 <li>Vegan</li>
@@ -98,6 +125,11 @@
                 <li>Pizza & Fast food</li>
                 <li>others</li>
             </ul>
+
+            <div class="section2-mobile-menu">
+                <img src="images/next-page.png" alt="drop down">
+                <p>Pizza & Fast Food</p>
+            </div>
         </div>
 
         <div class="section2-container-lower">
@@ -337,7 +369,7 @@
                     <ul>
                         <li>What payment methods are accepted?</li>
                         <li>Can I track my order in real-time?</li>
-                        <li>Are there any special discounts or promotions available?</li>
+                        <li>Are there any special discounts?</li>
                         <li>Is Order.UK available in my area?</li>
                     </ul>
                 </div>

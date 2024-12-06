@@ -24,6 +24,9 @@
         .section3-container-content
         {
             @include flexCenter(row, space-between);
+
+            row-gap: 16px;
+            flex-wrap: wrap;
             width: 100%;
 
             margin-top: 50px;

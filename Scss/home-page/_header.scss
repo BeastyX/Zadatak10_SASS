@@ -17,6 +17,31 @@ body
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #F90;	
+    background-image: -webkit-linear-gradient(45deg,
+                                            rgba(255, 255, 255, .2) 25%,
+                                            transparent 25%,
+                                            transparent 50%,
+                                            rgba(255, 255, 255, .2) 50%,
+                                            rgba(255, 255, 255, .2) 75%,
+                                            transparent 75%,
+                                            transparent)
+}
+
 header
 {
     @include flexCenter(column);
@@ -26,6 +51,16 @@ header
     {
         width: 90%;
         font-weight: weight(medium);
+
+        .header-container-mobile
+        {
+            display: none;
+        }
+        
+        .header-container-mobile-location
+        {
+            display: none;
+        }
         
         .header-container-upper
         {
@@ -63,7 +98,7 @@ header
                 span
                 {
                     color: $secondary-txt-color;
-                    text-decoration: underline
+                    text-decoration: underline;
                 }
             }
             
@@ -110,14 +145,53 @@ header
 
             ul
             {
-                display: flex;
                 column-gap: 32px;
+                @include flexCenter();
                 list-style-type: none;
+                position: relative;
 
-                li
+                #check
                 {
-                    font-size: 18px;
-                    padding: 8px 24px;
+                    display: none;
+                }
+
+                span
+                {
+                    @include flexCenter();
+
+                    li
+                    {
+                        font-size: 18px;
+                        padding: 8px 24px;
+
+                        a
+                        {
+                            display: inline-block;
+                            text-align: center;
+                            position: relative;
+                        }
+                    }
+
+                    .close-menu
+                    {
+                        top: 20px;
+                        right: 20px;
+                    }
+                }
+
+                .close-menu, .open-menu
+                {
+                    position: absolute;
+                    cursor: pointer;
+                    font-size: 48px;
+                    display: none;
+                }
+
+                .open-menu
+                {
+                    top: 20%;
+                    right: 12px;
+                    transform: translateY(-50%);
                 }
 
                 li:first-child
@@ -129,6 +203,11 @@ header
                     {
                         color: $third-color;
                     }
+                }
+
+                li:nth-child(6)
+                {
+                    display: none;
                 }
             }
 

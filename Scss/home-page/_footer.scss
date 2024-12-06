@@ -18,6 +18,7 @@ footer
         {
             // @include testborder();
             @include flexCenter(row, space-between);
+            flex-wrap: wrap;
             width: 90%;
 
             .footer-upper-left
