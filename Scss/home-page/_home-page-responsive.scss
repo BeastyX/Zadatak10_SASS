@@ -691,19 +691,26 @@
 
             .header-container-mobile-location
             {
-                display: flex;
+                @include flexCenter();
                 margin-top: 16px;
                 order: 2;
 
+                img
+                {
+                    width: 18px;
+                    height: 18px;
+                }
                 p
                 {
                     padding-left: 8px;
+                    font-size: 13px;
                 }
-
+                
                 a
                 {
                     span
                     {
+                        font-size: 14px;
                         padding-left: 4px;
                         color: $secondary-txt-color;
                         text-decoration: underline;
@@ -813,7 +820,7 @@
 
                 .search-bar-container
                 {
-                    width: 340px;
+                    width: 90%;
                 }
             }
         }
@@ -825,7 +832,7 @@
         {
             h1
             {
-                font-size: 16px;
+                font-size: 14px;
             }
 
             h1:nth-child(1)
@@ -843,13 +850,13 @@
                 display: flex;
     
                 border: 2px solid $primary-txt-color;
-                padding: 8px 12px;
+                padding: 4px 8px;
                 border-radius: 32px;
 
                 p
                 {
                     
-                    font-size: 12px;
+                    font-size: 11px;
                 }
                 img
                 {
@@ -861,10 +868,10 @@
             
         }
 
+
         .section2-container-lower 
         {
             @include flexCenter(row, space-between);
-            // @include testborder;
             overflow-x: auto;
             
             &::-webkit-scrollbar 
@@ -900,7 +907,50 @@
                   font-size: 15px;
               }
             }
+        }
+        .section2-container-lowest
+        {
+            @include flexCenter(row, space-between);
 
-          }
+            width: 90%;
+            overflow-x: auto;
+
+            .section2-container-lowest-content
+            {
+                display: flex;
+
+                position: relative;
+                // @include testborder;
+
+                @include flexCenter(column, end);
+                align-items: start;
+    
+                margin-right: 40px;
+    
+                width: 200px;
+
+                flex-shrink: 0;
+
+                h1
+                {
+                    font-size: 15px;
+                    font-weight: weight(medium);
+                    color: $secondary-txt-color;
+                }
+                
+                h2
+                {
+                    font-size: 17px;
+                    font-weight: weight(bolder);
+                    width: 150px;
+                }
+    
+            }
+
+            &::-webkit-scrollbar 
+            {
+              display: none;
+            }
+        }
     }
 }

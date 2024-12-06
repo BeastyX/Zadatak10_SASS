@@ -58,7 +58,7 @@
         }
 
     }
-
+    
     .section2-container-lower
     {
         // @include testborder;
@@ -132,5 +132,10 @@
             font-weight: weight(bolder);
         }
 
+    }
+
+    .section2-container-lowest
+    {
+        display: none;
     }
 }
