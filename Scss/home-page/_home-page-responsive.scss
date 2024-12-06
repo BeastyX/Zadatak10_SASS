@@ -1030,4 +1030,102 @@
             }
         }
     }
+
+    .section5
+    {
+        .section5-container
+        {
+            .friends
+            {
+                width: 90%;
+            }
+
+            .section5-text
+            {
+                width: 80%;
+
+                .section5-text-logo
+                {
+                    img
+                    {
+                        width: 160px;
+                        position: relative;
+                        bottom: 8px;
+                    }
+        
+                    h1
+                    {
+                        font-size: 32px;
+                        font-weight: weight(bolder);
+                    }
+                }
+
+                .section5-text-blacked
+                {
+                    h2
+                    {
+                        font-weight: weight(medium);
+                        font-size: 28px;
+                    }
+    
+                    span
+                    {
+                        color: $secondary-txt-color;
+                        text-decoration: underline;
+                    }
+                }
+
+                h3
+                {
+                    margin-top: 24px;
+                    font-weight: weight(regular);
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                .section5-text-apps
+                {
+                    margin-left: 0px;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+
+                    img
+                    {
+                        width: 120px;
+                        position: relative;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    .section6
+    {
+        .section6-container
+        {
+            .section6-content
+            {
+                height: 240px;
+
+                h1
+                {
+                    font-size: 16px;
+                }
+
+                h2
+                {
+                    font-size: 24px;
+                }
+
+                p
+                {
+                    margin-top: 0px;
+                    padding: 8px 0px;
+                    width: 160px;
+                }
+            }
+        }
+    }
 }
