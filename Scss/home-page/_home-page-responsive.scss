@@ -797,14 +797,14 @@
 
                 h1
                 {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: weight(regular);
                     margin-bottom: 24px;
                 }
                 
                 h2
                 {
-                    font-size: 36px;
+                    font-size: 34px;
                     width: 350px;
                     line-height: 36px;
                     margin-bottom: 24px;
@@ -812,7 +812,7 @@
 
                 h3
                 {
-                    font-size: 15px;
+                    font-size: 13px;
                     font-weight: weight(regular);
                     margin: 0px;
                     margin-bottom: 24px;
@@ -832,7 +832,7 @@
         {
             h1
             {
-                font-size: 14px;
+                font-size: 12px;
             }
 
             h1:nth-child(1)
@@ -856,12 +856,12 @@
                 p
                 {
                     
-                    font-size: 11px;
+                    font-size: 10px;
                 }
                 img
                 {
-                    margin-right: 12px;
-                    width: 22px;
+                    margin-right: 4px;
+                    width: 20px;
                     transform: rotate(90deg);
                 }
             }
@@ -950,6 +950,54 @@
             &::-webkit-scrollbar 
             {
               display: none;
+            }
+        }
+    }
+
+    .section3
+    {
+        background-color: rgba(217, 217, 217, 0.5);
+        padding-top: 48px;
+        animation: none;
+        .section3-container
+        {
+            h1
+            {
+                font-size: 20px;
+                font-weight: weight(bolder);
+            }
+
+            .section3-container-content
+            {
+                .section3-content
+                {
+                    width: 45%;
+
+                    img
+                    {
+                        width: 100%;
+                    }
+
+                    .section3-text
+                    {
+                        background-color: $primary-txt-color;
+
+                        h1
+                        {
+                            font-weight: weight(bolder);
+                            font-size: 14px;
+                            color: $secondary-txt-color;
+                        }
+
+                        h2
+                        {
+                            font-weight: weight(regular);
+                            font-size: 13px;
+                            color: $third-color;
+                        }
+                    }
+                }
+
             }
         }
     }
