@@ -1001,4 +1001,33 @@
             }
         }
     }
+
+    .section4
+    {
+        margin-top: 80px;
+        .section4-container
+        {
+            h1
+            {
+                font-size: 20px;
+            }
+            .section4-container-content
+            {
+                margin-top: 24px;
+                .section4-content
+                {
+                    img
+                    {
+                        width: 180px;
+                    }
+
+                    .section4-text
+                    {
+                        height: 48px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
