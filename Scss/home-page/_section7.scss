@@ -17,7 +17,7 @@
         padding: 164px;
         .setction7-upper-txt
         {
-            @include scroll();
+            // @include scroll();
 
 
             // @include testborder;
@@ -57,7 +57,7 @@
 
         .setciont7-main-container
         {
-             @include scroll();
+            //  @include scroll();
 
             // @include testborder;
             @include flexCenter(row, space-between);
