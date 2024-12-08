@@ -1,0 +1,36 @@
+.section03
+{
+    @include flexCenter();
+    margin-top: 50px;
+    background-color: $secondary-txt-color;
+    
+    .section03-container
+    {
+        @include flexCenter(row, space-between);
+        width: 90%;
+        padding: 24px 0px;
+        
+        ul
+        {
+            width: 100%;
+            @include flexCenter(row, space-between);
+            column-gap: 32px;
+            list-style-type: none;
+
+            li
+            {
+                font-size: 21px;
+                font-weight: weight(bolder);
+                color: $third-color;
+                cursor: pointer;
+            }
+
+            li:first-child
+            {
+                background-color: $primary-txt-color;
+                padding: 8px 32px;
+                border-radius: 32px;
+            }
+        }
+    }
+}

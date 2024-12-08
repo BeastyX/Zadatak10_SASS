@@ -1,0 +1,30 @@
+.section02
+{
+    @include flexCenter();
+    margin-top: 50px;
+
+    .section02-container
+    {
+        @include flexCenter(row, space-between);
+        width: 90%;
+
+        h1
+        {
+            font-size: 36px;
+        }
+
+        p
+        {
+            @include flexCenter(row, start);
+            border: 2px solid rgba(3, 8, 31, 0.7);
+            border-radius: 32px;
+            padding: 12px 24px;
+            width: 280px;
+
+            img
+            {
+                margin-right: 12px;
+            }
+        }
+    }
+}

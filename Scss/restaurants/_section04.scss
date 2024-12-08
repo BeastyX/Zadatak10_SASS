@@ -1,0 +1,100 @@
+.section04
+{
+    @include flexCenter();
+    margin-top: 50px;
+
+    .section04-container
+    {
+        // @include testborder;
+        @include flexCenter(row, space-between);
+
+        width: 90%;
+
+        .section04-content
+        {
+            position: relative;
+
+            @include flexCenter(column, end);
+            align-items: start;
+
+            padding: 30px;
+            border-radius: 16px;
+
+            width: 30%;
+            height: 375px;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            background-image:
+            linear-gradient(to left, transparent, rgba(7, 7, 7, 0.8)),
+            url('../../images/offers1.png');
+
+            .section04-content-discount
+            {
+                position: absolute;
+
+                right: 32px;
+                top: 0;
+
+                padding: 20px;
+                border-radius: 0px 0px 12px 12px;
+                background-color: $primary-txt-color;
+
+                color: $third-color;
+                font-weight: weight(bolder);
+                font-size: 18px;
+            }
+            
+            .section04-content-plus
+            {
+                position: absolute;
+
+                @include flexCenter();
+
+                right: 0;
+                bottom: 0;
+
+                padding: 20px 24px;
+                border-radius: 48px 0px 0px 0px;
+
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        .section04-content:nth-child(2)
+        {
+            background-image:
+            linear-gradient(to left, transparent, rgba(7, 7, 7, 0.8)),
+            url('../../images/offers2.png');
+        }
+
+        .section04-content:nth-child(3)
+        {
+            background-image:
+            linear-gradient(to left, transparent, rgba(7, 7, 7, 0.8)),
+            url('../../images/offers3.png');
+        }
+
+        h1
+        {
+            color: $secondary-txt-color;
+            font-size: 18px;
+            font-weight: weight(medium);
+        }
+
+        h2
+        {
+            color: $third-color;
+            font-size: 32px;
+            font-weight: weight(bolder);
+        }
+
+    }
+
+    .section04-container-lowest
+    {
+        display: none;
+    }
+}

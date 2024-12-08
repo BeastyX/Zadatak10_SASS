@@ -194,11 +194,11 @@ header
                     transform: translateY(-50%);
                 }
 
-                li:first-child
+                .active
                 {
                     background-color: $secondary-txt-color;                    
                     border-radius: 32px;
-                    
+
                     a
                     {
                         color: $third-color;

@@ -1,0 +1,144 @@
+.section01
+{
+    @include flexCenter();
+    margin-top: 50px;
+
+    .section01-container
+    {
+        position: relative;
+
+        @include flexCenter(row, space-between);
+
+        background-color: $primary-txt-color;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        background-image:
+        linear-gradient(to left, rgba(3, 8, 31, 0.9), rgba(3, 8, 31, 0.9)),
+        url('../../images/Burgers.png');
+        
+        border-radius: 12px;
+        width: 90%;
+        height: 600px;
+
+        padding: 48px;
+
+        @include fade-down(120px, 0.9);
+
+        .section01-container-left
+        {
+            @include flexCenter(column, space-between);
+            
+            align-items: start;
+            
+            color: $third-color;
+            // @include testborder();
+            
+            width: 700px;
+            height: 195px;
+            
+            p
+            {
+                font-size: 20px;
+                font-weight: weight(regular);
+                
+                opacity: 0;
+                @include fade-right(-200px, 1, 0.5s);
+            }
+            
+            h1
+            {
+                font-size: 54px;
+                font-weight: weight(bold);
+                opacity: 0;
+                @include fade-right(-200px, 1, 0.8s);
+            }
+            
+            .section01-container-left-buttons
+            {
+                width: 100%;
+                @include flexCenter(row, space-between);
+                
+                p
+                {
+                    opacity: 0;
+                    @include fade-in(1.3s);
+
+                    border-radius: 32px;
+                    border: 1px solid $third-color;
+                    padding: 12px 24px;
+
+                    @include flexCenter(row, space-between);
+                    img
+                    {
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+        
+        .section01-container-right
+        {
+            // @include testborder();
+
+            .section01-container-right-image
+            {
+                opacity: 0;
+                @include fade-left(200px, 1, 1.3s);
+
+                position: relative;
+
+                width: 800px;
+                height: 500px;
+                border-radius: 16px;
+
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+
+                background-image:url("../../images/burgers-full.png");
+
+                img
+                {
+                    opacity: 0;
+                    @include fade-in(1.8s);
+
+                    position: absolute;
+                    width: 140px;
+
+                    left: -48px;
+                    bottom: -12px;
+
+                    border-radius: 16px;
+                }
+            }
+        }
+
+        .sectio01-open-time
+        {
+            position: absolute;
+            @include flexCenter(row, space-between);
+
+            background-color: $secondary-txt-color;
+            padding: 12px 56px;
+
+            left: 0;
+            bottom: -28px;
+
+            border-radius: 0px 12px 12px 0px;
+
+            p
+            {
+                @include flexCenter(row, space-between);
+                color: $third-color;
+
+                img
+                {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

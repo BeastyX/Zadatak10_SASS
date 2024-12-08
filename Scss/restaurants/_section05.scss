@@ -1,0 +1,95 @@
+.section05
+{
+    @include flexCenter();
+    margin-top: 50px;
+    .section05-container    
+    {
+        @include flexCenter(column, start);
+        align-items: start;
+        width: 90%;
+        // @include testborder;
+
+        h1
+        {
+            font-size: 44px;
+            font-weight: weight(bolder);
+            margin-bottom: 32px;
+        }
+
+        .orange-h1
+        {
+            margin-top: 100px;
+            color: $secondary-txt-color;
+        }
+        
+        .section05-content-container
+        {
+            width: 100%;
+            @include flexCenter(row, space-between);
+            flex-wrap: wrap;
+            row-gap: 64px;
+            
+            .section05-content
+            {
+                border-radius: 12px;
+                width: 500px;
+                box-shadow: 5px 5px 34px rgba(0, 0, 0, 0.25);
+                padding: 18px;
+                column-gap: 24px;
+
+                @include flexCenter(row, center);
+
+                .section05-content-left
+                {
+                    @include flexCenter(column);
+                    align-items: start;
+                    width: 220px;
+                    row-gap: 24px;
+
+                    h2
+                    {
+                        font-size: 20px;
+                        font-weight: weight(bold);
+                    }
+                    
+                    p
+                    {
+                        font-size: 14px;
+                        font-weight: weight(regular);
+                    }
+                    
+                    h3
+                    {
+                        font-size: 18px;
+                        font-weight: weight(bolder);
+                    }
+                }
+                
+                .section05-content-right
+                {
+                    position: relative;
+
+                    .menu-item
+                    {
+                        width: 220px;
+                    }
+
+                    .section05-content-plus
+                    {
+                        position: absolute;
+
+                        @include flexCenter();
+        
+                        right: 0;
+                        bottom: 0;
+        
+                        padding: 16px 20px;
+                        border-radius: 48px 0px 0px 0px;
+        
+                        background-color: rgba(255, 255, 255, 0.9);
+                    }
+                }
+            }
+        }
+    }
+}
