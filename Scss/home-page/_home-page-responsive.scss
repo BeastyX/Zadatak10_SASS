@@ -1137,7 +1137,10 @@
             background-color: $third-color;
             .setction7-upper-txt
             {
-
+                h1
+                {
+                    font-size: 26px;
+                }
             }
             .setciont7-main-container
             {
@@ -1183,6 +1186,94 @@
                     {
                         width: 350px;
                     }
+                }
+            }
+        }
+    }
+
+    .section8
+    {
+        margin-top: 0px;
+
+        .section8-container
+        {
+            @include flexCenter(column, center);
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 32px;
+            .content
+            {
+                // @include testborder();
+                width: 100%;
+                &.num
+                {
+                    position: relative;
+                    color: $third-color;
+
+                    width: 360px;
+                    text-align: center;
+                    
+                    font-size: 64px;
+                    font-weight: 300;
+                    bottom: -8px;
+                }
+                
+                &.text
+                {
+                    text-align: center;
+                    position: relative;
+                    color: $third-color;
+                    font-size: 24px;
+                    font-weight: weight(bolder);
+                    bottom: 8px;
+                }
+            }
+
+            hr
+            {
+                margin-left: 48px;
+                margin-right: 48px;
+                height: 0px;
+                width: 200px;
+                border: 1px solid $third-color;
+            }
+
+            hr:nth-child(4)
+            {
+                display: flex;
+            }
+        }
+    }
+
+    footer
+    {
+        .footer-container-upper
+        {
+            .footer-container-upper-content
+            {
+                @include flexCenter(row, center);
+                text-align: center;
+                // @include testborder();
+                .footer-upper-left
+                {
+
+                }
+
+                .footer-upper-center
+                {
+                    margin-left: 0px;
+
+                    .media
+                    {
+                        @include flexCenter(row, center);
+                        padding-left: 0px;
+                    }
+                }
+
+                .footer-upper-right
+                {
+                    flex-wrap: wrap;
+                    row-gap: 48px;
                 }
             }
         }
