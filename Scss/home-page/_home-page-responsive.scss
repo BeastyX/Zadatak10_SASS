@@ -631,6 +631,12 @@
 
 @media (max-width: $break-point5)
 {
+    html, body 
+    {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     header
     {
         margin-bottom: 64px;
