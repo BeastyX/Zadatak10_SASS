@@ -1129,4 +1129,62 @@
             }
         }
     }
+
+    .section7
+    {
+        .setction7-container
+        {
+            background-color: $third-color;
+            .setction7-upper-txt
+            {
+
+            }
+            .setciont7-main-container
+            {
+                animation: none;
+                background-color: $third-color;
+
+                .setciont7-main-container-left
+                {
+                    padding-bottom: 64px;
+                    padding-top: 24px;
+
+                    h2
+                    {
+                        margin-bottom: 32px
+                    }
+
+                    ul
+                    {
+                        li
+                        {
+                            color: $primary-txt-color;
+                        }
+                    }
+                }
+
+                .setciont7-main-container-right
+                {
+                    width: 90%;
+                    background-color: $primary-txt-color;
+                    border-radius: 12px;
+
+                    .setciont7-wraper-container
+                    {
+                        .section7-wraper-content
+                        {
+                            width: 240px;
+                            height: 280px;
+                        }
+
+                    }
+
+                    .p-lower
+                    {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
 }
