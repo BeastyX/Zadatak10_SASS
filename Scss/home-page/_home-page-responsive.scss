@@ -1263,6 +1263,11 @@
                 {
                     margin-left: 0px;
 
+                    .footer-search
+                    {
+                        width: 380px;
+                    }
+
                     .media
                     {
                         @include flexCenter(row, center);
